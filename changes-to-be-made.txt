@@ -1,0 +1,28 @@
+list of things that needs to me corrected or made or whatever:
+backend:
+    -> api      ->  models.py       =>  making the title and content of the note a rquired field ✓
+                    tests.py        =>  Add testing on note methods ✓
+                    views.py        =>  the code    "# if error response to react client (on every method that response to client)
+                                                    # return Response({
+                                                    #     'status': 'error', 
+                                                    #     'message': str(e)
+                                                    # }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)"
+                                        at line 38, also at line 67 there was a standar suggested                    
+                                                    "# If error
+                                                    # return Response({
+                                                    #     'status': 'error', 
+                                                    #     'message': str(e)
+                                                    # }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+                                                    # If success
+                                                    # return Response({
+                                                    #     'status': 'Success',
+                                                    #     'message': 'Sources retrieved by level.',                                                        #     'data': serializer.data
+                                                    # }, status=status.HTTP_200_OK)"
+                                        also showing the note before deleting ✓ (kind of)                
+    -> backend  -> settings.py      => Add a visual interface, like pgadmin line 106
+                   urls.py          => asking for user views, coment related to anthoer coment on the views.py at backend/api in line 103
+
+Frontend
+    -> forntend      ->  constants.js       =>  rename the refresh token and normal token
+
+        

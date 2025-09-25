@@ -20,19 +20,38 @@ function Home(){
         api
             .get("/api/user/me/")
             .then((res) => {
-                setCurrentUser(res.data)
-                setIsAdmin(res.data.is_admin)
-                console.log("Current user:", res.data)
+                if (res.data.status === 'success') {
+                    setCurrentUser(res.data.data)
+                    setIsAdmin(res.data.data.is_admin)
+                    console.log("Current user:", res.data.data)
+                } else {
+                    console.error("Error fetching user:", res.data.message)
+                    alert(res.data.message || "Error fetching user information")
+                }
             })
-            .catch((err) => console.log("Error fetching user:", err))
+            .catch((err) => {
+                console.log("Error fetching user:", err)
+                alert("Error fetching user information")
+            })
     }
 
     const getNotes = () => {
         api
             .get("/api/notes/")
-            .then((res) => res.data)
-            .then((data) => {setNotes(data); console.log(data)})
-            .catch((err) => alert(err)) 
+            .then((res) => {
+                // Handle standardized response format
+                if (res.data.status === 'success') {
+                    setNotes(res.data.data)
+                    console.log("Notes data:", res.data.data)
+                } else {
+                    console.error("Error fetching notes:", res.data.message)
+                    alert(res.data.message || "Error fetching notes")
+                }
+            })
+            .catch((err) => {
+                console.error("Error fetching notes:", err)
+                alert("Error fetching notes")
+            }) 
     }
 
     const deleteNode = (id) => {
@@ -44,16 +63,19 @@ function Home(){
         if (window.confirm("¿Seguro que quieres eliminar esta nota?")) {
             api.delete(`/api/notes/delete/${id}/`)
                 .then((res) => {
-                    if (res.status === 204) {
-                        alert("Nota eliminada")
+                    // Handle standardized response format
+                    if (res.data.status === 'success') {
+                        alert(res.data.message || "Nota eliminada")
                         getNotes() 
                     } else {
-                        alert("Error al eliminar la nota") 
+                        alert(res.data.message || "Error al eliminar la nota")
                     }
                 })
                 .catch((error) => {
                     console.error("Delete error:", error)
-                    if (error.response?.status === 403) {
+                    if (error.response?.data?.status === 'error') {
+                        alert(error.response.data.message)
+                    } else if (error.response?.status === 403) {
                         alert("You don't have permission to delete this note")
                     } else {
                         alert("Error deleting note")
@@ -67,18 +89,22 @@ function Home(){
         api
             .post("/api/notes/", {content, title})
             .then((res) => {
-                if(res.status === 201) {
-                    alert("Nota creada")
+                if (res.data.status === 'success') {
+                    alert(res.data.message || "Nota creada")
                     setTitle("") 
                     setContent("")
                     getNotes() 
                 } else {
-                    alert("Error al crear nota")
+                    alert(res.data.message || "Error al crear nota")
                 }
             })
             .catch((err) => {
                 console.error("Create note error:", err)
-                alert("Error creating note")
+                if (err.response?.data?.status === 'error') {
+                    alert(err.response.data.message)
+                } else {
+                    alert("Error creating note")
+                }
             })
     }
 

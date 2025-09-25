@@ -35,7 +35,6 @@ def log_debug(message, extra_data=None):
     else:
         general_logger.debug(message)
 
-# Context manager for logging function entry/exit
 class LogFunctionCall:
     def __init__(self, function_name, user_id=None):
         self.function_name = function_name
