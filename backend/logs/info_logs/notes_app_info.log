@@ -1,203 +1,543 @@
-INFO 2025-09-17 13:43:10,906 logging_utility Unauthenticated request: POST /api/token/
-INFO 2025-09-17 13:43:12,112 logging_utility Response: 200 for POST /api/token/ by Anonymous (Duration: 1.21s)
-INFO 2025-09-17 13:43:12,298 logging_utility Unauthenticated request: GET /api/notes/
-INFO 2025-09-17 13:43:12,301 logging_utility Unauthenticated request: GET /api/user/me/
-INFO 2025-09-17 13:43:12,303 logging_utility Entering function: NoteListCreate.get_queryset (User: 1)
-INFO 2025-09-17 13:43:12,305 logging_utility Entering function: CurrentUserView.get (User: 1)
-INFO 2025-09-17 13:43:12,306 logging_utility Retrieved 5 notes for user 1
-INFO 2025-09-17 13:43:12,307 logging_utility Function CurrentUserView.get completed successfully
-INFO 2025-09-17 13:43:12,307 logging_utility Function NoteListCreate.get_queryset completed successfully
-INFO 2025-09-17 13:43:12,309 logging_utility Response: 200 for GET /api/user/me/ by 1 (Duration: 0.01s)
-INFO 2025-09-17 13:43:12,317 logging_utility Unauthenticated request: GET /api/user/me/
-INFO 2025-09-17 13:43:12,321 logging_utility Entering function: CurrentUserView.get (User: 1)
-INFO 2025-09-17 13:43:12,321 logging_utility Function CurrentUserView.get completed successfully
-INFO 2025-09-17 13:43:12,322 logging_utility Response: 200 for GET /api/user/me/ by 1 (Duration: 0.00s)
-INFO 2025-09-17 13:43:12,338 logging_utility Response: 200 for GET /api/notes/ by 1 (Duration: 0.04s)
-INFO 2025-09-17 13:43:12,348 logging_utility Unauthenticated request: GET /api/notes/
-INFO 2025-09-17 13:43:12,353 logging_utility Entering function: NoteListCreate.get_queryset (User: 1)
-INFO 2025-09-17 13:43:12,354 logging_utility Retrieved 5 notes for user 1
-INFO 2025-09-17 13:43:12,354 logging_utility Function NoteListCreate.get_queryset completed successfully
-INFO 2025-09-17 13:43:12,358 logging_utility Response: 200 for GET /api/notes/ by 1 (Duration: 0.01s)
-INFO 2025-09-17 13:43:39,449 logging_utility Unauthenticated request: POST /api/notes/
-INFO 2025-09-17 13:43:39,453 logging_utility Entering function: NoteListCreate.perform_create (User: 1)
-INFO 2025-09-17 13:43:39,468 logging_utility Note created successfully - ID: 11, Title: 'radio', Author: 1
-INFO 2025-09-17 13:43:39,469 logging_utility Function NoteListCreate.perform_create completed successfully
-INFO 2025-09-17 13:43:39,469 logging_utility Response: 201 for POST /api/notes/ by 1 (Duration: 0.02s)
-INFO 2025-09-17 13:43:41,312 logging_utility Unauthenticated request: GET /api/notes/
-INFO 2025-09-17 13:43:41,316 logging_utility Entering function: NoteListCreate.get_queryset (User: 1)
-INFO 2025-09-17 13:43:41,317 logging_utility Retrieved 6 notes for user 1
-INFO 2025-09-17 13:43:41,317 logging_utility Function NoteListCreate.get_queryset completed successfully
-INFO 2025-09-17 13:43:41,321 logging_utility Response: 200 for GET /api/notes/ by 1 (Duration: 0.01s)
-INFO 2025-09-17 13:45:01,411 logging_utility Unauthenticated request: POST /api/token/
-INFO 2025-09-17 13:45:02,050 logging_utility Response: 200 for POST /api/token/ by Anonymous (Duration: 0.64s)
-INFO 2025-09-17 13:45:02,170 logging_utility Unauthenticated request: GET /api/notes/
-INFO 2025-09-17 13:45:02,175 logging_utility Unauthenticated request: GET /api/user/me/
-INFO 2025-09-17 13:45:02,178 logging_utility Unauthenticated request: GET /api/notes/
-INFO 2025-09-17 13:45:02,180 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
-INFO 2025-09-17 13:45:02,181 logging_utility Entering function: CurrentUserView.get (User: 6)
-INFO 2025-09-17 13:45:02,182 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
-INFO 2025-09-17 13:45:02,182 logging_utility Retrieved 6 notes for user admin
-INFO 2025-09-17 13:45:02,182 logging_utility Function CurrentUserView.get completed successfully
-INFO 2025-09-17 13:45:02,183 logging_utility Unauthenticated request: GET /api/user/me/
-INFO 2025-09-17 13:45:02,184 logging_utility Function NoteListCreate.get_queryset completed successfully
-INFO 2025-09-17 13:45:02,184 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.01s)
-INFO 2025-09-17 13:45:02,184 logging_utility Retrieved 6 notes for user admin
-INFO 2025-09-17 13:45:02,186 logging_utility Function NoteListCreate.get_queryset completed successfully
-INFO 2025-09-17 13:45:02,192 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.02s)
-INFO 2025-09-17 13:45:02,197 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.02s)
-INFO 2025-09-17 13:45:02,199 logging_utility Entering function: CurrentUserView.get (User: 6)
-INFO 2025-09-17 13:45:02,200 logging_utility Function CurrentUserView.get completed successfully
-INFO 2025-09-17 13:45:02,201 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.02s)
-INFO 2025-09-17 13:45:32,493 logging_utility Unauthenticated request: DELETE /api/notes/delete/11/
-INFO 2025-09-17 13:45:32,496 logging_utility Entering function: NoteDelete.destroy (User: 6)
-INFO 2025-09-17 13:45:32,496 logging_utility Entering function: NoteDelete.get_queryset (User: 6)
-INFO 2025-09-17 13:45:32,496 logging_utility Admin user admin accessing delete queryset
-INFO 2025-09-17 13:45:32,496 logging_utility Function NoteDelete.get_queryset completed successfully
-INFO 2025-09-17 13:45:32,497 logging_utility Entering function: NoteDelete.get_queryset (User: 6)
-INFO 2025-09-17 13:45:32,498 logging_utility Admin user admin accessing delete queryset
-INFO 2025-09-17 13:45:32,498 logging_utility Function NoteDelete.get_queryset completed successfully
-INFO 2025-09-17 13:45:32,508 logging_utility Note deleted successfully by admin admin - Extra data: {'id': 11, 'title': 'radio', 'author': '1'}
-INFO 2025-09-17 13:45:32,509 logging_utility Function NoteDelete.destroy completed successfully
-INFO 2025-09-17 13:45:32,509 logging_utility Response: 204 for DELETE /api/notes/delete/11/ by admin (Duration: 0.02s)
-INFO 2025-09-17 13:45:33,769 logging_utility Unauthenticated request: GET /api/notes/
-INFO 2025-09-17 13:45:33,779 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
-INFO 2025-09-17 13:45:33,780 logging_utility Retrieved 5 notes for user admin
-INFO 2025-09-17 13:45:33,780 logging_utility Function NoteListCreate.get_queryset completed successfully
-INFO 2025-09-17 13:45:33,782 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.01s)
-INFO 2025-09-17 14:45:20,510 logging_utility Unauthenticated request: POST /api/token/refresh/
-INFO 2025-09-17 14:45:20,511 logging_utility Unauthenticated request: POST /api/token/refresh/
-INFO 2025-09-17 14:45:20,565 logging_utility Response: 200 for POST /api/token/refresh/ by Anonymous (Duration: 0.05s)
-INFO 2025-09-17 14:45:20,566 logging_utility Response: 200 for POST /api/token/refresh/ by Anonymous (Duration: 0.06s)
-INFO 2025-09-17 14:45:22,102 logging_utility Unauthenticated request: GET /api/notes/
-INFO 2025-09-17 14:45:22,104 logging_utility Unauthenticated request: GET /api/user/me/
-INFO 2025-09-17 14:45:22,106 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
-INFO 2025-09-17 14:45:22,108 logging_utility Retrieved 5 notes for user admin
-INFO 2025-09-17 14:45:22,108 logging_utility Function NoteListCreate.get_queryset completed successfully
-INFO 2025-09-17 14:45:22,109 logging_utility Entering function: CurrentUserView.get (User: 6)
-INFO 2025-09-17 14:45:22,113 logging_utility Function CurrentUserView.get completed successfully
-INFO 2025-09-17 14:45:22,113 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.01s)
-INFO 2025-09-17 14:45:22,183 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.08s)
-INFO 2025-09-17 14:45:37,034 logging_utility Unauthenticated request: GET /api/notes/
-INFO 2025-09-17 14:45:37,035 logging_utility Unauthenticated request: GET /api/user/me/
-INFO 2025-09-17 14:45:37,035 logging_utility Unauthenticated request: GET /api/notes/
-INFO 2025-09-17 14:45:37,036 logging_utility Unauthenticated request: GET /api/user/me/
-INFO 2025-09-17 14:45:37,045 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
-INFO 2025-09-17 14:45:37,046 logging_utility Entering function: CurrentUserView.get (User: 6)
-INFO 2025-09-17 14:45:37,047 logging_utility Retrieved 5 notes for user admin
-INFO 2025-09-17 14:45:37,048 logging_utility Function CurrentUserView.get completed successfully
-INFO 2025-09-17 14:45:37,048 logging_utility Function NoteListCreate.get_queryset completed successfully
-INFO 2025-09-17 14:45:37,049 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.01s)
-INFO 2025-09-17 14:45:37,051 logging_utility Entering function: CurrentUserView.get (User: 6)
-INFO 2025-09-17 14:45:37,051 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
-INFO 2025-09-17 14:45:37,059 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.03s)
-INFO 2025-09-17 14:45:37,060 logging_utility Function CurrentUserView.get completed successfully
-INFO 2025-09-17 14:45:37,061 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.03s)
-INFO 2025-09-17 14:45:37,061 logging_utility Retrieved 5 notes for user admin
-INFO 2025-09-17 14:45:37,062 logging_utility Function NoteListCreate.get_queryset completed successfully
-INFO 2025-09-17 14:45:37,068 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.03s)
-INFO 2025-09-17 14:57:02,985 logging_utility Unauthenticated request: GET /api/notes/
-INFO 2025-09-17 14:57:03,005 logging_utility Unauthenticated request: GET /api/user/me/
-INFO 2025-09-17 14:57:03,005 logging_utility Unauthenticated request: GET /api/notes/
-INFO 2025-09-17 14:57:03,335 logging_utility Entering function: CurrentUserView.get (User: 6)
-INFO 2025-09-17 14:57:03,337 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
-INFO 2025-09-17 14:57:03,339 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
-INFO 2025-09-17 14:57:03,340 logging_utility Retrieved 5 notes for user admin
-INFO 2025-09-17 14:57:03,341 logging_utility Function NoteListCreate.get_queryset completed successfully
-INFO 2025-09-17 14:57:03,345 logging_utility Retrieved 5 notes for user admin
-INFO 2025-09-17 14:57:03,345 logging_utility Function NoteListCreate.get_queryset completed successfully
-INFO 2025-09-17 14:57:03,392 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.47s)
-INFO 2025-09-17 14:57:03,399 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.58s)
-INFO 2025-09-17 14:57:03,541 logging_utility Function CurrentUserView.get completed successfully
-INFO 2025-09-17 14:57:03,542 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.57s)
-INFO 2025-09-17 14:57:03,546 logging_utility Unauthenticated request: GET /api/user/me/
-INFO 2025-09-17 14:57:03,548 logging_utility Entering function: CurrentUserView.get (User: 6)
-INFO 2025-09-17 14:57:03,549 logging_utility Function CurrentUserView.get completed successfully
-INFO 2025-09-17 14:57:03,549 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.00s)
-INFO 2025-09-17 14:57:32,946 logging_utility Unauthenticated request: GET /api/notes/
-INFO 2025-09-17 14:57:32,947 logging_utility Unauthenticated request: GET /api/user/me/
-INFO 2025-09-17 14:57:32,948 logging_utility Unauthenticated request: GET /api/notes/
-INFO 2025-09-17 14:57:33,195 logging_utility Unauthenticated request: GET /api/user/me/
-INFO 2025-09-17 14:57:33,196 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
-INFO 2025-09-17 14:57:33,200 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
-INFO 2025-09-17 14:57:33,205 logging_utility Retrieved 5 notes for user admin
-INFO 2025-09-17 14:57:33,205 logging_utility Function NoteListCreate.get_queryset completed successfully
-INFO 2025-09-17 14:57:33,230 logging_utility Entering function: CurrentUserView.get (User: 6)
-INFO 2025-09-17 14:57:33,230 logging_utility Retrieved 5 notes for user admin
-INFO 2025-09-17 14:57:33,231 logging_utility Function NoteListCreate.get_queryset completed successfully
-INFO 2025-09-17 14:57:33,232 logging_utility Function CurrentUserView.get completed successfully
-INFO 2025-09-17 14:57:33,244 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.30s)
-INFO 2025-09-17 14:57:33,247 logging_utility Entering function: CurrentUserView.get (User: 6)
-INFO 2025-09-17 14:57:33,247 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.30s)
-INFO 2025-09-17 14:57:33,252 logging_utility Function CurrentUserView.get completed successfully
-INFO 2025-09-17 14:57:33,257 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.31s)
-INFO 2025-09-17 14:57:33,258 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.06s)
-INFO 2025-09-17 14:58:49,729 logging_utility Unauthenticated request: GET /api/notes/
-INFO 2025-09-17 14:58:49,731 logging_utility Unauthenticated request: GET /api/notes/
-INFO 2025-09-17 14:58:49,732 logging_utility Unauthenticated request: GET /api/user/me/
-INFO 2025-09-17 14:58:49,734 logging_utility Unauthenticated request: GET /api/user/me/
-INFO 2025-09-17 14:58:49,759 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
-INFO 2025-09-17 14:58:49,761 logging_utility Entering function: CurrentUserView.get (User: 6)
-INFO 2025-09-17 14:58:49,761 logging_utility Retrieved 5 notes for user admin
-INFO 2025-09-17 14:58:49,762 logging_utility Entering function: CurrentUserView.get (User: 6)
-INFO 2025-09-17 14:58:49,762 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
-INFO 2025-09-17 14:58:49,762 logging_utility Function NoteListCreate.get_queryset completed successfully
-INFO 2025-09-17 14:58:49,762 logging_utility Function CurrentUserView.get completed successfully
-INFO 2025-09-17 14:58:49,763 logging_utility Function CurrentUserView.get completed successfully
-INFO 2025-09-17 14:58:49,765 logging_utility Retrieved 5 notes for user admin
-INFO 2025-09-17 14:58:49,766 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.03s)
-INFO 2025-09-17 14:58:49,767 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.03s)
-INFO 2025-09-17 14:58:49,768 logging_utility Function NoteListCreate.get_queryset completed successfully
-INFO 2025-09-17 14:58:49,903 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.17s)
-INFO 2025-09-17 14:58:49,912 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.18s)
-INFO 2025-09-17 14:58:59,112 logging_utility Unauthenticated request: DELETE /api/notes/delete/10/
-INFO 2025-09-17 14:58:59,156 logging_utility Entering function: NoteDelete.destroy (User: 6)
-INFO 2025-09-17 14:58:59,157 logging_utility Entering function: NoteDelete.get_queryset (User: 6)
-INFO 2025-09-17 14:58:59,157 logging_utility Admin user admin accessing delete queryset
-INFO 2025-09-17 14:58:59,157 logging_utility Function NoteDelete.get_queryset completed successfully
-INFO 2025-09-17 14:58:59,220 logging_utility Entering function: NoteDelete.get_queryset (User: 6)
-INFO 2025-09-17 14:58:59,221 logging_utility Admin user admin accessing delete queryset
-INFO 2025-09-17 14:58:59,222 logging_utility Function NoteDelete.get_queryset completed successfully
-INFO 2025-09-17 14:58:59,245 logging_utility Note deleted successfully by admin admin - Extra data: {'id': 10, 'title': 'a', 'author': 'admin'}
-INFO 2025-09-17 14:58:59,246 logging_utility Function NoteDelete.destroy completed successfully
-INFO 2025-09-17 14:58:59,246 logging_utility Response: 204 for DELETE /api/notes/delete/10/ by admin (Duration: 0.13s)
-INFO 2025-09-17 14:59:01,395 logging_utility Unauthenticated request: GET /api/notes/
-INFO 2025-09-17 14:59:01,427 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
-INFO 2025-09-17 14:59:01,428 logging_utility Retrieved 4 notes for user admin
-INFO 2025-09-17 14:59:01,429 logging_utility Function NoteListCreate.get_queryset completed successfully
-INFO 2025-09-17 14:59:01,460 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.07s)
-INFO 2025-09-17 14:59:06,613 logging_utility Unauthenticated request: POST /api/notes/
-INFO 2025-09-17 14:59:06,958 logging_utility Entering function: NoteListCreate.perform_create (User: 6)
-INFO 2025-09-17 14:59:07,080 logging_utility Note created successfully - ID: 12, Title: '1', Author: admin
-INFO 2025-09-17 14:59:07,080 logging_utility Function NoteListCreate.perform_create completed successfully
-INFO 2025-09-17 14:59:07,081 logging_utility Response: 201 for POST /api/notes/ by admin (Duration: 0.47s)
-INFO 2025-09-17 14:59:09,030 logging_utility Unauthenticated request: GET /api/notes/
-INFO 2025-09-17 14:59:09,034 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
-INFO 2025-09-17 14:59:09,035 logging_utility Retrieved 5 notes for user admin
-INFO 2025-09-17 14:59:09,035 logging_utility Function NoteListCreate.get_queryset completed successfully
-INFO 2025-09-17 14:59:09,073 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.04s)
-INFO 2025-09-17 15:00:55,907 logging_utility Unauthenticated request: POST /api/user/register/
-INFO 2025-09-17 15:01:05,629 logging_utility Unauthenticated request: POST /api/user/register/
-INFO 2025-09-17 15:01:05,636 logging_utility Entering function: CreateUserView.perform_create
-INFO 2025-09-17 15:01:06,799 logging_utility New user registered successfully - Username: bah, ID: 7
-INFO 2025-09-17 15:01:06,799 logging_utility Function CreateUserView.perform_create completed successfully
-INFO 2025-09-17 15:01:06,800 logging_utility Response: 201 for POST /api/user/register/ by Anonymous (Duration: 1.17s)
-INFO 2025-09-17 15:01:11,456 logging_utility Unauthenticated request: POST /api/token/
-INFO 2025-09-17 15:01:12,546 logging_utility Response: 200 for POST /api/token/ by Anonymous (Duration: 1.09s)
-INFO 2025-09-17 15:01:12,590 logging_utility Unauthenticated request: GET /api/notes/
-INFO 2025-09-17 15:01:12,593 logging_utility Unauthenticated request: GET /api/notes/
-INFO 2025-09-17 15:01:12,598 logging_utility Unauthenticated request: GET /api/user/me/
-INFO 2025-09-17 15:01:12,601 logging_utility Unauthenticated request: GET /api/user/me/
-INFO 2025-09-17 15:01:12,603 logging_utility Entering function: NoteListCreate.get_queryset (User: 7)
-INFO 2025-09-17 15:01:12,605 logging_utility Retrieved 5 notes for user bah
-INFO 2025-09-17 15:01:12,606 logging_utility Entering function: NoteListCreate.get_queryset (User: 7)
-INFO 2025-09-17 15:01:12,606 logging_utility Function NoteListCreate.get_queryset completed successfully
-INFO 2025-09-17 15:01:12,606 logging_utility Entering function: CurrentUserView.get (User: 7)
-INFO 2025-09-17 15:01:12,609 logging_utility Retrieved 5 notes for user bah
-INFO 2025-09-17 15:01:12,610 logging_utility Function NoteListCreate.get_queryset completed successfully
-INFO 2025-09-17 15:01:12,610 logging_utility Entering function: CurrentUserView.get (User: 7)
-INFO 2025-09-17 15:01:12,610 logging_utility Function CurrentUserView.get completed successfully
-INFO 2025-09-17 15:01:12,613 logging_utility Response: 200 for GET /api/notes/ by bah (Duration: 0.02s)
-INFO 2025-09-17 15:01:12,613 logging_utility Response: 200 for GET /api/user/me/ by bah (Duration: 0.02s)
-INFO 2025-09-17 15:01:12,614 logging_utility Function CurrentUserView.get completed successfully
-INFO 2025-09-17 15:01:12,617 logging_utility Response: 200 for GET /api/notes/ by bah (Duration: 0.02s)
-INFO 2025-09-17 15:01:12,618 logging_utility Response: 200 for GET /api/user/me/ by bah (Duration: 0.02s)
+INFO 2025-09-25 13:28:44,894 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 13:28:44,912 logging_utility Entering function: CurrentUserView.get (User: 2)
+INFO 2025-09-25 13:28:44,913 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 13:28:44,914 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.02s)
+INFO 2025-09-25 13:28:46,227 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 13:28:46,230 logging_utility Entering function: CurrentUserView.get (User: 1)
+INFO 2025-09-25 13:28:46,232 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 13:28:46,232 logging_utility Response: 200 for GET /api/user/me/ by testuser (Duration: 0.00s)
+INFO 2025-09-25 13:28:47,615 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 13:28:48,987 logging_utility Unauthenticated request: POST /api/notes/
+INFO 2025-09-25 13:28:48,988 logging_utility Entering function: NoteListCreate.create (User: 1)
+INFO 2025-09-25 13:28:48,989 logging_utility Note created successfully - ID: 3, Title: 'New Note', Author: testuser
+INFO 2025-09-25 13:28:49,030 logging_utility Function NoteListCreate.create completed successfully
+INFO 2025-09-25 13:28:49,031 logging_utility Response: 201 for POST /api/notes/ by testuser (Duration: 0.04s)
+INFO 2025-09-25 13:28:50,297 logging_utility Unauthenticated request: POST /api/notes/
+INFO 2025-09-25 13:28:50,298 logging_utility Entering function: NoteListCreate.create (User: 1)
+INFO 2025-09-25 13:28:50,302 logging_utility Function NoteListCreate.create completed successfully
+INFO 2025-09-25 13:28:51,682 logging_utility Unauthenticated request: POST /api/notes/
+INFO 2025-09-25 13:28:53,089 logging_utility Unauthenticated request: DELETE /api/notes/delete/9999/
+INFO 2025-09-25 13:28:53,090 logging_utility Entering function: NoteDelete.destroy (User: 2)
+INFO 2025-09-25 13:28:53,090 logging_utility Entering function: NoteDelete.get_queryset (User: 2)
+INFO 2025-09-25 13:28:53,090 logging_utility Admin user admin accessing delete queryset
+INFO 2025-09-25 13:28:53,090 logging_utility Function NoteDelete.get_queryset completed successfully
+INFO 2025-09-25 13:28:55,003 logging_utility Function NoteDelete.destroy completed successfully
+INFO 2025-09-25 13:28:56,430 logging_utility Unauthenticated request: DELETE /api/notes/delete/1/
+INFO 2025-09-25 13:28:56,431 logging_utility Entering function: NoteDelete.destroy (User: 2)
+INFO 2025-09-25 13:28:56,431 logging_utility Entering function: NoteDelete.get_queryset (User: 2)
+INFO 2025-09-25 13:28:56,431 logging_utility Admin user admin accessing delete queryset
+INFO 2025-09-25 13:28:56,431 logging_utility Function NoteDelete.get_queryset completed successfully
+INFO 2025-09-25 13:28:56,432 logging_utility Entering function: NoteDelete.get_queryset (User: 2)
+INFO 2025-09-25 13:28:56,432 logging_utility Admin user admin accessing delete queryset
+INFO 2025-09-25 13:28:56,432 logging_utility Function NoteDelete.get_queryset completed successfully
+INFO 2025-09-25 13:28:56,433 logging_utility Note deleted successfully by admin admin - Extra data: {'id': 1, 'title': 'Note 1', 'author': 'testuser'}
+INFO 2025-09-25 13:28:56,433 logging_utility Function NoteDelete.destroy completed successfully
+INFO 2025-09-25 13:28:56,433 logging_utility Response: 200 for DELETE /api/notes/delete/1/ by admin (Duration: 0.00s)
+INFO 2025-09-25 13:28:57,816 logging_utility Unauthenticated request: DELETE /api/notes/delete/1/
+INFO 2025-09-25 13:28:57,817 logging_utility Entering function: NoteDelete.destroy (User: 1)
+INFO 2025-09-25 13:28:57,817 logging_utility Function NoteDelete.destroy completed successfully
+INFO 2025-09-25 13:28:59,128 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 13:28:59,128 logging_utility Entering function: NoteListCreate.list (User: 1)
+INFO 2025-09-25 13:28:59,128 logging_utility Entering function: NoteListCreate.get_queryset (User: 1)
+INFO 2025-09-25 13:28:59,129 logging_utility Retrieved 2 notes for user testuser
+INFO 2025-09-25 13:28:59,129 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 13:28:59,130 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 13:28:59,130 logging_utility Response: 200 for GET /api/notes/ by testuser (Duration: 0.00s)
+INFO 2025-09-25 13:29:00,609 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 13:29:08,622 logging_utility Unauthenticated request: POST /api/user/register/
+INFO 2025-09-25 13:29:08,623 logging_utility Entering function: CreateUserView.create
+INFO 2025-09-25 13:29:08,633 logging_utility Function CreateUserView.create completed successfully
+INFO 2025-09-25 13:29:08,640 logging_utility Unauthenticated request: POST /api/user/register/
+INFO 2025-09-25 13:29:08,641 logging_utility Entering function: CreateUserView.create
+INFO 2025-09-25 13:29:08,644 logging_utility Function CreateUserView.create completed successfully
+INFO 2025-09-25 13:29:08,652 logging_utility Unauthenticated request: POST /api/user/register/
+INFO 2025-09-25 13:29:08,652 logging_utility Entering function: CreateUserView.create
+INFO 2025-09-25 13:29:10,133 logging_utility New user registered successfully - Username: newuser, ID: 1
+INFO 2025-09-25 13:29:10,133 logging_utility Function CreateUserView.create completed successfully
+INFO 2025-09-25 13:29:10,133 logging_utility Response: 201 for POST /api/user/register/ by Anonymous (Duration: 1.48s)
+INFO 2025-09-25 13:29:50,583 logging_utility Unauthenticated request: POST /api/token/
+INFO 2025-09-25 13:29:52,735 logging_utility Response: 200 for POST /api/token/ by Anonymous (Duration: 2.15s)
+INFO 2025-09-25 13:29:53,101 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 13:29:53,105 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 13:29:53,109 logging_utility Entering function: NoteListCreate.list (User: 1)
+INFO 2025-09-25 13:29:53,110 logging_utility Entering function: NoteListCreate.get_queryset (User: 1)
+INFO 2025-09-25 13:29:53,113 logging_utility Retrieved 5 notes for user 1
+INFO 2025-09-25 13:29:53,113 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 13:29:53,118 logging_utility Entering function: CurrentUserView.get (User: 1)
+INFO 2025-09-25 13:29:53,127 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 13:29:53,130 logging_utility Response: 200 for GET /api/user/me/ by 1 (Duration: 0.02s)
+INFO 2025-09-25 13:29:53,139 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 13:29:53,150 logging_utility Entering function: CurrentUserView.get (User: 1)
+INFO 2025-09-25 13:29:53,156 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 13:29:53,156 logging_utility Response: 200 for GET /api/user/me/ by 1 (Duration: 0.02s)
+INFO 2025-09-25 13:29:53,174 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 13:29:53,175 logging_utility Response: 200 for GET /api/notes/ by 1 (Duration: 0.07s)
+INFO 2025-09-25 13:29:53,182 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 13:29:53,189 logging_utility Entering function: NoteListCreate.list (User: 1)
+INFO 2025-09-25 13:29:53,190 logging_utility Entering function: NoteListCreate.get_queryset (User: 1)
+INFO 2025-09-25 13:29:53,192 logging_utility Retrieved 5 notes for user 1
+INFO 2025-09-25 13:29:53,192 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 13:29:53,198 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 13:29:53,199 logging_utility Response: 200 for GET /api/notes/ by 1 (Duration: 0.02s)
+INFO 2025-09-25 18:43:51,473 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 18:43:51,480 logging_utility Entering function: CurrentUserView.get (User: 2)
+INFO 2025-09-25 18:43:51,481 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 18:43:51,482 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.01s)
+INFO 2025-09-25 18:43:52,638 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 18:43:52,640 logging_utility Entering function: CurrentUserView.get (User: 1)
+INFO 2025-09-25 18:43:52,640 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 18:43:52,640 logging_utility Response: 200 for GET /api/user/me/ by testuser (Duration: 0.00s)
+INFO 2025-09-25 18:43:53,817 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 18:43:55,036 logging_utility Unauthenticated request: POST /api/notes/
+INFO 2025-09-25 18:43:55,037 logging_utility Entering function: NoteListCreate.create (User: 1)
+INFO 2025-09-25 18:43:55,038 logging_utility Note created successfully - ID: 3, Title: 'New Note', Author: testuser
+INFO 2025-09-25 18:43:55,058 logging_utility Function NoteListCreate.create completed successfully
+INFO 2025-09-25 18:43:55,059 logging_utility Response: 201 for POST /api/notes/ by testuser (Duration: 0.02s)
+INFO 2025-09-25 18:43:56,202 logging_utility Unauthenticated request: POST /api/notes/
+INFO 2025-09-25 18:43:56,203 logging_utility Entering function: NoteListCreate.create (User: 1)
+INFO 2025-09-25 18:43:56,205 logging_utility Function NoteListCreate.create completed successfully
+INFO 2025-09-25 18:43:57,398 logging_utility Unauthenticated request: POST /api/notes/
+INFO 2025-09-25 18:44:40,806 logging_utility Unauthenticated request: POST /api/token/
+INFO 2025-09-25 18:44:41,907 logging_utility Response: 200 for POST /api/token/ by Anonymous (Duration: 1.10s)
+INFO 2025-09-25 18:44:42,346 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 18:44:42,347 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 18:44:42,355 logging_utility Entering function: NoteListCreate.list (User: 6)
+INFO 2025-09-25 18:44:42,355 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
+INFO 2025-09-25 18:44:42,358 logging_utility Entering function: CurrentUserView.get (User: 6)
+INFO 2025-09-25 18:44:42,359 logging_utility Retrieved 5 notes for user admin
+INFO 2025-09-25 18:44:42,359 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 18:44:42,360 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 18:44:42,360 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.01s)
+INFO 2025-09-25 18:44:42,371 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 18:44:42,376 logging_utility Entering function: CurrentUserView.get (User: 6)
+INFO 2025-09-25 18:44:42,377 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 18:44:42,377 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.01s)
+INFO 2025-09-25 18:44:42,393 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 18:44:42,394 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.05s)
+INFO 2025-09-25 18:44:42,398 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 18:44:42,402 logging_utility Entering function: NoteListCreate.list (User: 6)
+INFO 2025-09-25 18:44:42,402 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
+INFO 2025-09-25 18:44:42,403 logging_utility Retrieved 5 notes for user admin
+INFO 2025-09-25 18:44:42,403 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 18:44:42,406 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 18:44:42,407 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.01s)
+INFO 2025-09-25 18:52:32,280 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 18:52:32,285 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 18:52:32,514 logging_utility Entering function: CurrentUserView.get (User: 6)
+INFO 2025-09-25 18:52:32,515 logging_utility Entering function: NoteListCreate.list (User: 6)
+INFO 2025-09-25 18:52:32,523 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
+INFO 2025-09-25 18:52:32,528 logging_utility Retrieved 5 notes for user admin
+INFO 2025-09-25 18:52:32,528 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 18:52:32,554 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 18:52:32,568 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.30s)
+INFO 2025-09-25 18:52:32,650 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 18:52:32,653 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.40s)
+INFO 2025-09-25 18:52:32,655 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 18:52:32,660 logging_utility Entering function: NoteListCreate.list (User: 6)
+INFO 2025-09-25 18:52:32,661 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 18:52:32,661 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
+INFO 2025-09-25 18:52:32,663 logging_utility Retrieved 5 notes for user admin
+INFO 2025-09-25 18:52:32,663 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 18:52:32,666 logging_utility Entering function: CurrentUserView.get (User: 6)
+INFO 2025-09-25 18:52:32,672 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 18:52:32,673 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.02s)
+INFO 2025-09-25 18:52:32,673 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 18:52:32,674 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.01s)
+INFO 2025-09-25 18:52:44,661 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 18:52:44,662 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 18:52:44,681 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 18:52:44,686 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 18:52:44,737 logging_utility Entering function: NoteListCreate.list (User: 6)
+INFO 2025-09-25 18:52:44,738 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
+INFO 2025-09-25 18:52:44,740 logging_utility Entering function: NoteListCreate.list (User: 6)
+INFO 2025-09-25 18:52:44,742 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
+INFO 2025-09-25 18:52:44,744 logging_utility Retrieved 5 notes for user admin
+INFO 2025-09-25 18:52:44,744 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 18:52:44,747 logging_utility Retrieved 5 notes for user admin
+INFO 2025-09-25 18:52:44,747 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 18:52:44,751 logging_utility Entering function: CurrentUserView.get (User: 6)
+INFO 2025-09-25 18:52:44,752 logging_utility Entering function: CurrentUserView.get (User: 6)
+INFO 2025-09-25 18:52:44,756 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 18:52:44,791 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 18:52:44,793 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 18:52:44,824 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.16s)
+INFO 2025-09-25 18:52:44,824 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 18:52:44,825 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.14s)
+INFO 2025-09-25 18:52:44,826 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.17s)
+INFO 2025-09-25 18:52:44,827 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.15s)
+INFO 2025-09-25 18:52:58,884 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 18:52:58,887 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 18:52:58,888 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 18:52:58,892 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 18:52:58,897 logging_utility Entering function: CurrentUserView.get (User: 6)
+INFO 2025-09-25 18:52:58,898 logging_utility Entering function: NoteListCreate.list (User: 6)
+INFO 2025-09-25 18:52:58,898 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
+INFO 2025-09-25 18:52:58,898 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 18:52:58,899 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.01s)
+INFO 2025-09-25 18:52:58,913 logging_utility Retrieved 5 notes for user admin
+INFO 2025-09-25 18:52:58,913 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 18:52:58,914 logging_utility Entering function: NoteListCreate.list (User: 6)
+INFO 2025-09-25 18:52:58,916 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
+INFO 2025-09-25 18:52:58,923 logging_utility Entering function: CurrentUserView.get (User: 6)
+INFO 2025-09-25 18:52:58,924 logging_utility Retrieved 5 notes for user admin
+INFO 2025-09-25 18:52:58,925 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 18:52:58,925 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 18:52:58,928 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 18:52:58,929 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.04s)
+INFO 2025-09-25 18:52:58,938 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.05s)
+INFO 2025-09-25 18:52:58,953 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 18:52:58,955 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.07s)
+INFO 2025-09-25 18:53:15,931 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 18:53:15,932 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 18:53:15,932 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 18:53:15,933 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 18:53:15,944 logging_utility Entering function: NoteListCreate.list (User: 6)
+INFO 2025-09-25 18:53:15,944 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
+INFO 2025-09-25 18:53:15,945 logging_utility Entering function: CurrentUserView.get (User: 6)
+INFO 2025-09-25 18:53:15,945 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 18:53:15,946 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.01s)
+INFO 2025-09-25 18:53:15,946 logging_utility Retrieved 5 notes for user admin
+INFO 2025-09-25 18:53:15,947 logging_utility Entering function: NoteListCreate.list (User: 6)
+INFO 2025-09-25 18:53:15,947 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 18:53:15,947 logging_utility Entering function: CurrentUserView.get (User: 6)
+INFO 2025-09-25 18:53:15,948 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
+INFO 2025-09-25 18:53:15,953 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 18:53:15,954 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.02s)
+INFO 2025-09-25 18:53:15,955 logging_utility Retrieved 5 notes for user admin
+INFO 2025-09-25 18:53:15,956 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 18:53:15,973 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 18:53:15,973 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.04s)
+INFO 2025-09-25 18:53:16,009 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 18:53:16,009 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.08s)
+INFO 2025-09-25 18:53:19,400 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 18:53:19,402 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 18:53:19,405 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 18:53:19,407 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 18:53:19,412 logging_utility Entering function: NoteListCreate.list (User: 6)
+INFO 2025-09-25 18:53:19,413 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
+INFO 2025-09-25 18:53:19,436 logging_utility Retrieved 5 notes for user admin
+INFO 2025-09-25 18:53:19,436 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 18:53:19,439 logging_utility Entering function: NoteListCreate.list (User: 6)
+INFO 2025-09-25 18:53:19,439 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
+INFO 2025-09-25 18:53:19,439 logging_utility Entering function: CurrentUserView.get (User: 6)
+INFO 2025-09-25 18:53:19,440 logging_utility Entering function: CurrentUserView.get (User: 6)
+INFO 2025-09-25 18:53:19,441 logging_utility Retrieved 5 notes for user admin
+INFO 2025-09-25 18:53:19,441 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 18:53:19,446 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 18:53:19,446 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 18:53:19,446 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 18:53:19,447 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.04s)
+INFO 2025-09-25 18:53:19,447 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.05s)
+INFO 2025-09-25 18:53:19,448 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.04s)
+INFO 2025-09-25 18:53:19,503 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 18:53:19,504 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.10s)
+INFO 2025-09-25 18:53:24,146 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 18:53:24,148 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 18:53:24,148 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 18:53:24,149 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 18:53:24,159 logging_utility Entering function: NoteListCreate.list (User: 6)
+INFO 2025-09-25 18:53:24,160 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
+INFO 2025-09-25 18:53:24,161 logging_utility Entering function: CurrentUserView.get (User: 6)
+INFO 2025-09-25 18:53:24,161 logging_utility Retrieved 5 notes for user admin
+INFO 2025-09-25 18:53:24,161 logging_utility Entering function: NoteListCreate.list (User: 6)
+INFO 2025-09-25 18:53:24,162 logging_utility Entering function: CurrentUserView.get (User: 6)
+INFO 2025-09-25 18:53:24,162 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 18:53:24,162 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 18:53:24,162 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
+INFO 2025-09-25 18:53:24,163 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.02s)
+INFO 2025-09-25 18:53:24,164 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 18:53:24,166 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 18:53:24,166 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.02s)
+INFO 2025-09-25 18:53:24,167 logging_utility Retrieved 5 notes for user admin
+INFO 2025-09-25 18:53:24,168 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.02s)
+INFO 2025-09-25 18:53:24,169 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 18:53:24,176 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 18:53:24,176 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.03s)
+INFO 2025-09-25 18:53:52,960 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 18:53:52,961 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 18:53:52,961 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 18:53:52,962 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 18:53:52,973 logging_utility Entering function: NoteListCreate.list (User: 6)
+INFO 2025-09-25 18:53:52,974 logging_utility Entering function: CurrentUserView.get (User: 6)
+INFO 2025-09-25 18:53:52,975 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
+INFO 2025-09-25 18:53:52,976 logging_utility Entering function: NoteListCreate.list (User: 6)
+INFO 2025-09-25 18:53:52,976 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
+INFO 2025-09-25 18:53:52,977 logging_utility Entering function: CurrentUserView.get (User: 6)
+INFO 2025-09-25 18:53:52,978 logging_utility Retrieved 5 notes for user admin
+INFO 2025-09-25 18:53:52,978 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 18:53:52,978 logging_utility Retrieved 5 notes for user admin
+INFO 2025-09-25 18:53:52,979 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.02s)
+INFO 2025-09-25 18:53:52,979 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 18:53:52,979 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 18:53:52,979 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 18:53:52,981 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.02s)
+INFO 2025-09-25 18:53:53,051 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 18:53:53,053 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.09s)
+INFO 2025-09-25 18:53:53,056 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 18:53:53,057 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.10s)
+INFO 2025-09-25 18:53:56,176 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 18:53:56,176 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 18:53:56,177 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 18:53:56,177 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 18:53:56,259 logging_utility Entering function: CurrentUserView.get (User: 6)
+INFO 2025-09-25 18:53:56,260 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 18:53:56,260 logging_utility Entering function: NoteListCreate.list (User: 6)
+INFO 2025-09-25 18:53:56,261 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.08s)
+INFO 2025-09-25 18:53:56,261 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
+INFO 2025-09-25 18:53:56,262 logging_utility Entering function: NoteListCreate.list (User: 6)
+INFO 2025-09-25 18:53:56,263 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
+INFO 2025-09-25 18:53:56,264 logging_utility Entering function: CurrentUserView.get (User: 6)
+INFO 2025-09-25 18:53:56,264 logging_utility Retrieved 5 notes for user admin
+INFO 2025-09-25 18:53:56,267 logging_utility Retrieved 5 notes for user admin
+INFO 2025-09-25 18:53:56,269 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 18:53:56,270 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 18:53:56,271 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 18:53:56,305 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.13s)
+INFO 2025-09-25 18:53:56,308 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 18:53:56,308 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.13s)
+INFO 2025-09-25 18:53:56,323 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 18:53:56,324 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.15s)
+INFO 2025-09-25 18:55:09,840 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 18:55:09,843 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 18:55:09,843 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 18:55:09,844 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 18:55:09,853 logging_utility Entering function: NoteListCreate.list (User: 6)
+INFO 2025-09-25 18:55:09,853 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
+INFO 2025-09-25 18:55:09,855 logging_utility Retrieved 5 notes for user admin
+INFO 2025-09-25 18:55:09,855 logging_utility Entering function: CurrentUserView.get (User: 6)
+INFO 2025-09-25 18:55:09,855 logging_utility Entering function: NoteListCreate.list (User: 6)
+INFO 2025-09-25 18:55:09,855 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 18:55:09,856 logging_utility Entering function: CurrentUserView.get (User: 6)
+INFO 2025-09-25 18:55:09,856 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
+INFO 2025-09-25 18:55:09,858 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 18:55:09,861 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 18:55:09,861 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.02s)
+INFO 2025-09-25 18:55:09,861 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 18:55:09,861 logging_utility Retrieved 5 notes for user admin
+INFO 2025-09-25 18:55:09,862 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.02s)
+INFO 2025-09-25 18:55:09,862 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.02s)
+INFO 2025-09-25 18:55:09,862 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 18:55:09,928 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 18:55:09,928 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.08s)
+INFO 2025-09-25 18:56:36,658 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 18:56:36,659 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 18:56:36,660 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 18:56:36,663 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 18:56:36,710 logging_utility Entering function: NoteListCreate.list (User: 6)
+INFO 2025-09-25 18:56:36,731 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
+INFO 2025-09-25 18:56:36,732 logging_utility Entering function: CurrentUserView.get (User: 6)
+INFO 2025-09-25 18:56:36,733 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 18:56:36,734 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.07s)
+INFO 2025-09-25 18:56:36,734 logging_utility Entering function: CurrentUserView.get (User: 6)
+INFO 2025-09-25 18:56:36,734 logging_utility Retrieved 5 notes for user admin
+INFO 2025-09-25 18:56:36,735 logging_utility Entering function: NoteListCreate.list (User: 6)
+INFO 2025-09-25 18:56:36,735 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
+INFO 2025-09-25 18:56:36,736 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 18:56:36,736 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 18:56:36,738 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.08s)
+INFO 2025-09-25 18:56:36,738 logging_utility Retrieved 5 notes for user admin
+INFO 2025-09-25 18:56:36,740 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 18:56:36,740 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 18:56:36,741 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.08s)
+INFO 2025-09-25 18:56:36,746 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 18:56:36,749 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.09s)
+INFO 2025-09-25 18:56:49,374 logging_utility Unauthenticated request: POST /api/notes/
+INFO 2025-09-25 18:56:49,432 logging_utility Entering function: NoteListCreate.create (User: 6)
+INFO 2025-09-25 18:56:49,845 logging_utility Note created successfully - ID: 21, Title: 'wqe', Author: admin
+INFO 2025-09-25 18:56:49,846 logging_utility Function NoteListCreate.create completed successfully
+INFO 2025-09-25 18:56:49,846 logging_utility Response: 201 for POST /api/notes/ by admin (Duration: 0.47s)
+INFO 2025-09-25 18:56:51,444 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 18:56:51,472 logging_utility Entering function: NoteListCreate.list (User: 6)
+INFO 2025-09-25 18:56:51,472 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
+INFO 2025-09-25 18:56:51,473 logging_utility Retrieved 6 notes for user admin
+INFO 2025-09-25 18:56:51,473 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 18:56:51,477 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 18:56:51,478 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.03s)
+INFO 2025-09-25 18:56:53,136 logging_utility Unauthenticated request: POST /api/notes/
+INFO 2025-09-25 18:56:53,140 logging_utility Entering function: NoteListCreate.create (User: 6)
+INFO 2025-09-25 18:56:53,157 logging_utility Note created successfully - ID: 22, Title: 'weq', Author: admin
+INFO 2025-09-25 18:56:53,157 logging_utility Function NoteListCreate.create completed successfully
+INFO 2025-09-25 18:56:53,158 logging_utility Response: 201 for POST /api/notes/ by admin (Duration: 0.02s)
+INFO 2025-09-25 18:56:54,081 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 18:56:54,086 logging_utility Entering function: NoteListCreate.list (User: 6)
+INFO 2025-09-25 18:56:54,086 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
+INFO 2025-09-25 18:56:54,086 logging_utility Retrieved 7 notes for user admin
+INFO 2025-09-25 18:56:54,087 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 18:56:54,088 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 18:56:54,088 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.01s)
+INFO 2025-09-25 18:56:58,839 logging_utility Unauthenticated request: DELETE /api/notes/delete/22/
+INFO 2025-09-25 18:56:58,843 logging_utility Entering function: NoteDelete.destroy (User: 6)
+INFO 2025-09-25 18:56:58,843 logging_utility Entering function: NoteDelete.get_queryset (User: 6)
+INFO 2025-09-25 18:56:58,843 logging_utility Admin user admin accessing delete queryset
+INFO 2025-09-25 18:56:58,843 logging_utility Function NoteDelete.get_queryset completed successfully
+INFO 2025-09-25 18:56:58,882 logging_utility Entering function: NoteDelete.get_queryset (User: 6)
+INFO 2025-09-25 18:56:58,882 logging_utility Admin user admin accessing delete queryset
+INFO 2025-09-25 18:56:58,882 logging_utility Function NoteDelete.get_queryset completed successfully
+INFO 2025-09-25 18:56:58,986 logging_utility Note deleted successfully by admin admin - Extra data: {'id': 22, 'title': 'weq', 'author': 'admin'}
+INFO 2025-09-25 18:56:58,987 logging_utility Function NoteDelete.destroy completed successfully
+INFO 2025-09-25 18:56:58,988 logging_utility Response: 200 for DELETE /api/notes/delete/22/ by admin (Duration: 0.15s)
+INFO 2025-09-25 18:57:03,248 logging_utility Unauthenticated request: DELETE /api/notes/delete/22/
+INFO 2025-09-25 18:57:03,253 logging_utility Entering function: NoteDelete.destroy (User: 6)
+INFO 2025-09-25 18:57:03,253 logging_utility Entering function: NoteDelete.get_queryset (User: 6)
+INFO 2025-09-25 18:57:03,254 logging_utility Admin user admin accessing delete queryset
+INFO 2025-09-25 18:57:03,254 logging_utility Function NoteDelete.get_queryset completed successfully
+INFO 2025-09-25 18:57:03,958 logging_utility Function NoteDelete.destroy completed successfully
+INFO 2025-09-25 18:58:45,809 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 18:58:45,816 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 18:58:45,819 logging_utility Entering function: NoteListCreate.list (User: 6)
+INFO 2025-09-25 18:58:45,820 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
+INFO 2025-09-25 18:58:45,821 logging_utility Retrieved 6 notes for user admin
+INFO 2025-09-25 18:58:45,821 logging_utility Entering function: CurrentUserView.get (User: 6)
+INFO 2025-09-25 18:58:45,821 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 18:58:45,823 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 18:58:45,823 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.01s)
+INFO 2025-09-25 18:58:45,825 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 18:58:45,825 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.02s)
+INFO 2025-09-25 18:58:45,835 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 18:58:45,837 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 18:58:45,840 logging_utility Entering function: CurrentUserView.get (User: 6)
+INFO 2025-09-25 18:58:45,841 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 18:58:45,841 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.01s)
+INFO 2025-09-25 18:58:45,842 logging_utility Entering function: NoteListCreate.list (User: 6)
+INFO 2025-09-25 18:58:45,843 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
+INFO 2025-09-25 18:58:45,846 logging_utility Retrieved 6 notes for user admin
+INFO 2025-09-25 18:58:45,847 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 18:58:45,851 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 18:58:45,852 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.01s)
+INFO 2025-09-25 18:59:01,501 logging_utility Unauthenticated request: DELETE /api/notes/delete/21/
+INFO 2025-09-25 18:59:01,503 logging_utility Entering function: NoteDelete.destroy (User: 6)
+INFO 2025-09-25 18:59:01,503 logging_utility Entering function: NoteDelete.get_queryset (User: 6)
+INFO 2025-09-25 18:59:01,503 logging_utility Admin user admin accessing delete queryset
+INFO 2025-09-25 18:59:01,503 logging_utility Function NoteDelete.get_queryset completed successfully
+INFO 2025-09-25 18:59:01,504 logging_utility Entering function: NoteDelete.get_queryset (User: 6)
+INFO 2025-09-25 18:59:01,504 logging_utility Admin user admin accessing delete queryset
+INFO 2025-09-25 18:59:01,505 logging_utility Function NoteDelete.get_queryset completed successfully
+INFO 2025-09-25 18:59:01,515 logging_utility Note deleted successfully by admin admin - Extra data: {'id': 21, 'title': 'wqe', 'author': 'admin'}
+INFO 2025-09-25 18:59:01,515 logging_utility Function NoteDelete.destroy completed successfully
+INFO 2025-09-25 18:59:01,516 logging_utility Response: 200 for DELETE /api/notes/delete/21/ by admin (Duration: 0.02s)
+INFO 2025-09-25 19:00:22,871 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 19:00:22,873 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 19:00:22,879 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 19:00:22,882 logging_utility Entering function: NoteListCreate.list (User: 6)
+INFO 2025-09-25 19:00:22,884 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 19:00:22,884 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
+INFO 2025-09-25 19:00:22,887 logging_utility Entering function: CurrentUserView.get (User: 6)
+INFO 2025-09-25 19:00:22,888 logging_utility Entering function: NoteListCreate.list (User: 6)
+INFO 2025-09-25 19:00:22,888 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 19:00:22,888 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
+INFO 2025-09-25 19:00:22,889 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.02s)
+INFO 2025-09-25 19:00:22,889 logging_utility Retrieved 5 notes for user admin
+INFO 2025-09-25 19:00:22,891 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 19:00:22,892 logging_utility Entering function: CurrentUserView.get (User: 6)
+INFO 2025-09-25 19:00:22,893 logging_utility Retrieved 5 notes for user admin
+INFO 2025-09-25 19:00:22,894 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 19:00:22,896 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 19:00:22,899 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.02s)
+INFO 2025-09-25 19:00:22,901 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 19:00:22,902 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.03s)
+INFO 2025-09-25 19:00:22,905 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 19:00:22,906 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.03s)
+INFO 2025-09-25 19:00:31,582 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 19:00:31,585 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 19:00:31,585 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 19:00:31,586 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 19:00:31,589 logging_utility Entering function: NoteListCreate.list (User: 6)
+INFO 2025-09-25 19:00:31,589 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
+INFO 2025-09-25 19:00:31,629 logging_utility Entering function: CurrentUserView.get (User: 6)
+INFO 2025-09-25 19:00:31,631 logging_utility Retrieved 5 notes for user admin
+INFO 2025-09-25 19:00:31,631 logging_utility Entering function: NoteListCreate.list (User: 6)
+INFO 2025-09-25 19:00:31,632 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 19:00:31,632 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 19:00:31,633 logging_utility Entering function: CurrentUserView.get (User: 6)
+INFO 2025-09-25 19:00:31,633 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
+INFO 2025-09-25 19:00:31,635 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.05s)
+INFO 2025-09-25 19:00:31,636 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 19:00:31,636 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.05s)
+INFO 2025-09-25 19:00:31,637 logging_utility Retrieved 5 notes for user admin
+INFO 2025-09-25 19:00:31,639 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 19:00:31,639 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 19:00:31,640 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.06s)
+INFO 2025-09-25 19:00:31,649 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 19:00:31,650 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.06s)
+INFO 2025-09-25 19:00:35,468 logging_utility Unauthenticated request: DELETE /api/notes/delete/[object Object]/
+INFO 2025-09-25 19:00:54,683 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 19:00:54,686 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 19:00:54,687 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 19:00:54,688 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 19:00:54,695 logging_utility Entering function: NoteListCreate.list (User: 6)
+INFO 2025-09-25 19:00:54,696 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
+INFO 2025-09-25 19:00:54,698 logging_utility Retrieved 5 notes for user admin
+INFO 2025-09-25 19:00:54,698 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 19:00:54,699 logging_utility Entering function: CurrentUserView.get (User: 6)
+INFO 2025-09-25 19:00:54,700 logging_utility Entering function: CurrentUserView.get (User: 6)
+INFO 2025-09-25 19:00:54,701 logging_utility Entering function: NoteListCreate.list (User: 6)
+INFO 2025-09-25 19:00:54,701 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 19:00:54,701 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
+INFO 2025-09-25 19:00:54,703 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 19:00:54,704 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.02s)
+INFO 2025-09-25 19:00:54,704 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 19:00:54,705 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.02s)
+INFO 2025-09-25 19:00:54,706 logging_utility Retrieved 5 notes for user admin
+INFO 2025-09-25 19:00:54,706 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.02s)
+INFO 2025-09-25 19:00:54,707 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 19:00:54,715 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 19:00:54,715 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.03s)
+INFO 2025-09-25 19:00:56,183 logging_utility Unauthenticated request: DELETE /api/notes/delete/12/
+INFO 2025-09-25 19:00:56,185 logging_utility Entering function: NoteDelete.destroy (User: 6)
+INFO 2025-09-25 19:00:56,186 logging_utility Entering function: NoteDelete.get_queryset (User: 6)
+INFO 2025-09-25 19:00:56,186 logging_utility Admin user admin accessing delete queryset
+INFO 2025-09-25 19:00:56,186 logging_utility Function NoteDelete.get_queryset completed successfully
+INFO 2025-09-25 19:00:56,187 logging_utility Entering function: NoteDelete.get_queryset (User: 6)
+INFO 2025-09-25 19:00:56,187 logging_utility Admin user admin accessing delete queryset
+INFO 2025-09-25 19:00:56,187 logging_utility Function NoteDelete.get_queryset completed successfully
+INFO 2025-09-25 19:00:56,200 logging_utility Note deleted successfully by admin admin - Extra data: {'id': 12, 'title': '1', 'author': 'admin'}
+INFO 2025-09-25 19:00:56,200 logging_utility Function NoteDelete.destroy completed successfully
+INFO 2025-09-25 19:00:56,200 logging_utility Response: 200 for DELETE /api/notes/delete/12/ by admin (Duration: 0.02s)
+INFO 2025-09-25 19:00:58,191 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 19:00:58,200 logging_utility Entering function: NoteListCreate.list (User: 6)
+INFO 2025-09-25 19:00:58,200 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
+INFO 2025-09-25 19:00:58,202 logging_utility Retrieved 4 notes for user admin
+INFO 2025-09-25 19:00:58,202 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 19:00:58,204 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 19:00:58,205 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.01s)
+INFO 2025-09-25 19:05:04,310 logging_utility Authenticated request: GET /admin/ by user admin
+INFO 2025-09-25 19:05:04,670 logging_utility Authenticated request: GET /favicon.ico by user admin
+INFO 2025-09-25 19:05:09,677 logging_utility Authenticated request: GET /admin/auth/user/ by user admin
+INFO 2025-09-25 19:05:10,162 logging_utility Authenticated request: GET /admin/jsi18n/ by user admin
+INFO 2025-09-25 19:05:15,956 logging_utility Authenticated request: GET /admin/auth/group/ by user admin
+INFO 2025-09-25 19:05:16,063 logging_utility Authenticated request: GET /admin/jsi18n/ by user admin
+INFO 2025-09-25 19:05:19,972 logging_utility Authenticated request: GET /admin/auth/user/ by user admin
+INFO 2025-09-25 19:05:20,082 logging_utility Authenticated request: GET /admin/jsi18n/ by user admin
+INFO 2025-09-25 19:05:21,648 logging_utility Authenticated request: GET /admin/api/note/ by user admin
+INFO 2025-09-25 19:05:21,767 logging_utility Authenticated request: GET /admin/jsi18n/ by user admin
+INFO 2025-09-25 19:05:23,183 logging_utility Authenticated request: GET /admin/auth/user/ by user admin
+INFO 2025-09-25 19:05:23,326 logging_utility Authenticated request: GET /admin/jsi18n/ by user admin
+INFO 2025-09-25 19:05:25,567 logging_utility Authenticated request: GET /admin/api/note/ by user admin
+INFO 2025-09-25 19:05:26,056 logging_utility Authenticated request: GET /admin/auth/user/ by user admin
+INFO 2025-09-25 19:05:26,888 logging_utility Authenticated request: GET /admin/auth/group/ by user admin
+INFO 2025-09-25 19:05:27,889 logging_utility Authenticated request: GET /admin/auth/user/ by user admin
+INFO 2025-09-25 19:05:28,474 logging_utility Authenticated request: GET /admin/ by user admin
+INFO 2025-09-25 19:05:29,081 logging_utility Authenticated request: GET /admin/login/ by user admin
+INFO 2025-09-25 19:05:29,099 logging_utility Authenticated request: GET /admin/ by user admin
+INFO 2025-09-25 19:05:30,616 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 19:05:30,620 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 19:05:30,622 logging_utility Unauthenticated request: GET /api/notes/
+INFO 2025-09-25 19:05:30,625 logging_utility Unauthenticated request: GET /api/user/me/
+INFO 2025-09-25 19:05:30,663 logging_utility Entering function: NoteListCreate.list (User: 6)
+INFO 2025-09-25 19:05:30,663 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
+INFO 2025-09-25 19:05:30,664 logging_utility Entering function: CurrentUserView.get (User: 6)
+INFO 2025-09-25 19:05:30,665 logging_utility Entering function: NoteListCreate.list (User: 6)
+INFO 2025-09-25 19:05:30,666 logging_utility Entering function: NoteListCreate.get_queryset (User: 6)
+INFO 2025-09-25 19:05:30,667 logging_utility Retrieved 4 notes for user admin
+INFO 2025-09-25 19:05:30,667 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 19:05:30,669 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 19:05:30,670 logging_utility Entering function: CurrentUserView.get (User: 6)
+INFO 2025-09-25 19:05:30,671 logging_utility Retrieved 4 notes for user admin
+INFO 2025-09-25 19:05:30,672 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.05s)
+INFO 2025-09-25 19:05:30,674 logging_utility Function NoteListCreate.get_queryset completed successfully
+INFO 2025-09-25 19:05:30,675 logging_utility Function CurrentUserView.get completed successfully
+INFO 2025-09-25 19:05:30,676 logging_utility Response: 200 for GET /api/user/me/ by admin (Duration: 0.05s)
+INFO 2025-09-25 19:05:30,680 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 19:05:30,681 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.07s)
+INFO 2025-09-25 19:05:30,687 logging_utility Function NoteListCreate.list completed successfully
+INFO 2025-09-25 19:05:30,691 logging_utility Response: 200 for GET /api/notes/ by admin (Duration: 0.07s)

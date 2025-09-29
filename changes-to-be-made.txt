@@ -16,13 +16,23 @@ backend:
                                                     # If success
                                                     # return Response({
                                                     #     'status': 'Success',
-                                                    #     'message': 'Sources retrieved by level.',                                                        #     'data': serializer.data
+                                                    #     'message': 'Sources retrieved by level.',                                                        
+						    #     'data': serializer.data
                                                     # }, status=status.HTTP_200_OK)"
                                         also showing the note before deleting ✓ (kind of)                
-    -> backend  -> settings.py      => Add a visual interface, like pgadmin line 106
-                   urls.py          => asking for user views, coment related to anthoer coment on the views.py at backend/api in line 103
+    -> backend  -> settings.py      => Add a visual interface, like pgadmin line 106 ✓ (think so)
+                   urls.py          => asking for user views, comment related to anthoer coment on the views.py at backend/api in line 103 (didnt get it)
 
 Frontend
-    -> forntend      ->  constants.js       =>  rename the refresh token and normal token
+    -> forntend ->  constants.js                =>  rename the refresh token and normal token ✓
+                    api.js                      =>  "Try with utils folder | src/utils/api.js" migth put it in that directory? ✓
+                    app.jsx                     =>  Line 15, create a Logout component instead of the existing one ✓
+                ->  pages   ->  home.jsx        =>  line 93, put some style on that one ✓
+                                login.jsx       =>  ture 
+                                notFound.jsx    =>  style ✓
+                    components  ->  Note.jsx    =>  line 5, do it in its own component ✓ 
+                                ->  form.jsx    =>  hope for the framework to not get bitchy abut the names 
+                                                    try using the muilab thing  (tommorow)
+                                                    and change the token names as in the "constants.js" file ✓ 
 
         

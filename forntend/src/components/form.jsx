@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import api from '../api'
+import api from '../utils/api'
 import { useNavigate, Link } from 'react-router-dom'
-import { ACCESS_TOKEN, REFRESH_TOKEN } from '../constants'
+import { accessToken, refreshToken } from '../constants'
 
 import "../styles/Form.css"
 import LoadingIndicator from './LoadingInd'
@@ -21,8 +21,8 @@ function Form({ route, method, showRegisterLink, showLoginLink }) {
         try {
             const res = await api.post(route, {username, password})
             if (method === "login") {
-                localStorage.setItem(ACCESS_TOKEN, res.data.access)
-                localStorage.setItem(REFRESH_TOKEN, res.data.refresh)
+                localStorage.setItem(accessToken, res.data.access)
+                localStorage.setItem(refreshToken, res.data.refresh)
                 navigate('/')
             } else {
                 navigate('/login')

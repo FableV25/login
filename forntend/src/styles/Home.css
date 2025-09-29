@@ -1,27 +1,84 @@
 
 .top-left-link {
-  position: absolute;  /* take it out of normal flow */
-  top: 10px;           /* distance from top */
-  right: 10px;          /* distance from left */
-  text-decoration: none; /* remove underline */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-decoration: none; 
   font-weight: bold;
-  color: #007BFF;      /* nice blue, you can change */
-  padding: 6px 12px;   /* clickable padding */
-  border-radius: 6px;  /* smooth edges */
-  background: #f0f0f0; /* light background */
-  transition: background 0.2s ease; /* hover effect */
+  color: #007BFF;
+  padding: 6px 12px;   
+  border-radius: 6px;  
+  background: #f0f0f0; 
+  transition: background 0.2s ease; 
+}
+
+.notes-header {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #3b58da 0%, #3628f6 100%);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}  /* its aight */
+
+.new-note-header {
+  text-align: center;
+  color: white;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #8cf880c7 0%, #4ae34a 100%);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(22, 102, 2, 0.4);
+}
+
+.notes-header h2 {
+  color: white;
+  font-size: 2rem;
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.notes-count {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #667eea;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 0;
+}
+
+.notes-list-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.empty-notes {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  margin: 2rem 0;
+}
+
+.empty-notes p {
+  color: #6c757d;
+  font-size: 1.1rem;
+  margin: 0;
 }
 
 .top-left-link:hover {
   background: #ddd;
 }
 
-/* Container for the whole page */
 div {
   font-family: Arial, sans-serif;
 }
 
-/* User info section */
 .user-info {
   background-color: #f8f9fa;
   padding: 15px;
@@ -46,7 +103,6 @@ div {
   margin: 0;
 }
 
-/* Styles for the notes section */
 .notes-section {
   margin-bottom: 2rem;
 }
@@ -56,7 +112,6 @@ div {
   font-size: 24px;
 }
 
-/* Styles for individual notes - assuming your Note component has some container element */
 .note {
   background-color: #f9f9f9;
   border-left: 5px solid #007bff;
@@ -65,7 +120,6 @@ div {
   border-radius: 5px;
 }
 
-/* Styles for the form section */
 form {
   background-color: #fff;
   padding: 20px;

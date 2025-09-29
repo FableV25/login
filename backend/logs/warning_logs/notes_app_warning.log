@@ -1,0 +1,7 @@
+WARNING 2025-09-25 13:28:50,299 logging_utility Invalid note creation attempt by user testuser - Extra data: {'errors': {'title': [ErrorDetail(string='This field may not be blank.', code='blank')]}}
+WARNING 2025-09-25 13:28:57,817 logging_utility Unauthorized delete attempt by user testuser
+WARNING 2025-09-25 13:28:57,817 logging_utility Forbidden access: Response: 403 for DELETE /api/notes/delete/1/ by testuser (Duration: 0.00s)
+WARNING 2025-09-25 13:29:08,630 logging_utility Invalid user registration attempt - Extra data: {'errors': {'username': [ErrorDetail(string='A user with that username already exists.', code='unique')]}}
+WARNING 2025-09-25 13:29:08,643 logging_utility Invalid user registration attempt - Extra data: {'errors': {'username': [ErrorDetail(string='This field may not be blank.', code='blank')]}}
+WARNING 2025-09-25 18:43:56,204 logging_utility Invalid note creation attempt by user testuser - Extra data: {'errors': {'title': [ErrorDetail(string='This field may not be blank.', code='blank')]}}
+WARNING 2025-09-25 19:00:37,436 logging_utility Not found: Response: 404 for DELETE /api/notes/delete/[object Object]/ by Anonymous (Duration: 1.97s)

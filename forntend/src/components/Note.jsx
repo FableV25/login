@@ -1,8 +1,9 @@
 import React from "react"
 import "../styles/Note.css"
+import { formatDate } from "../config/Date"
 
 function Note({ note, onDelete, showDeleteButton, currentUserId }) {
-    const formattedDate = new Date(note.created_at).toLocaleDateString("en-US")
+    const formattedDate = formatDate(note.created_at)
     const isOwnNote = currentUserId === note.author_id
 
     return (

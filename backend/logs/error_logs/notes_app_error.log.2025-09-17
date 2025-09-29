@@ -1,0 +1,1 @@
+ERROR 2025-09-17 15:00:56,206 logging_utility Error response: Response: 400 for POST /api/user/register/ by Anonymous (Duration: 0.30s)

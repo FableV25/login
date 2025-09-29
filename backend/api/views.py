@@ -25,7 +25,6 @@ class NoteListCreate(generics.ListCreateAPIView):
                 raise
     
     def list(self, request, *args, **kwargs):
-        """Override list method to provide standardized response format"""
         with LogFunctionCall("NoteListCreate.list", request.user.id):
             try:
                 queryset = self.get_queryset()
@@ -57,7 +56,6 @@ class NoteListCreate(generics.ListCreateAPIView):
                 raise
     
     def create(self, request, *args, **kwargs):
-        """Override create method to provide standardized response format"""
         with LogFunctionCall("NoteListCreate.create", request.user.id):
             try:
                 serializer = self.get_serializer(data=request.data)
@@ -111,7 +109,6 @@ class NoteDelete(generics.DestroyAPIView):
                         'message': 'Only administrators can delete notes.'
                     }, status=status.HTTP_403_FORBIDDEN)
                 
-                # Gets the note its deleted
                 try:
                     note = self.get_object()
                     note_info = {
@@ -146,12 +143,10 @@ class NoteDelete(generics.DestroyAPIView):
                 }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 class CreateUserView(generics.CreateAPIView):
-    queryset = User.objects.all()
     serializer_class = UserSerializer
     permission_classes = [AllowAny]
     
     def create(self, request, *args, **kwargs):
-        """Overrides create method to provide standardized response format"""
         with LogFunctionCall("CreateUserView.create"):
             try:
                 serializer = self.get_serializer(data=request.data)

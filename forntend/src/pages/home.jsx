@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import api from "../api"
+import api from '../utils/api'
 import Note from "../components/Note"
 
 import "../styles/Home.css"
@@ -116,21 +116,35 @@ function Home(){
                 {isAdmin && <p className="admin-badge">Administrador</p>}
             </div>
             
-            <div>
+            <div className="notes-header">
                 <h2>Notas</h2>
-                <p>Mostrando {notes.length} nota(s)</p>
-                {notes.map((note) => (
-                    <Note 
-                        note={note} 
-                        onDelete={deleteNode} 
-                        key={note.id}
-                        showDeleteButton={isAdmin}
-                        currentUserId={currentUser?.id}
-                    />
-                ))}
+                <p className="notes-count">
+                    {notes.length === 0 
+                        ? "Sin notas" 
+                        : `${notes.length} nota${notes.length !== 1 ? 's' : ''}`
+                    }
+                </p>
             </div>
 
-            <h2>Crear una nueva nota</h2>
+            <div className="notes-list-container">
+                {notes.length === 0 ? (
+                    <div className="empty-notes">
+                        <p> Create the frist note </p>
+                    </div>
+                ) : (
+                    notes.map((note) => (
+                        <Note 
+                            note={note} 
+                            onDelete={deleteNode} 
+                            key={note.id}
+                            showDeleteButton={isAdmin}
+                            currentUserId={currentUser?.id}
+                        />
+                    ))
+                )}
+            </div>
+
+            <h2 className="new-note-header">Crear una nueva nota</h2>
             <form onSubmit={createNote}>
                 <label htmlFor="title">Encabezado</label>
                 <br />

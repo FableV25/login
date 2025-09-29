@@ -1,16 +1,12 @@
 import react from 'react'
-import { BrowserRouter, Routes, Route, Navigate} from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 
 import Home from './pages/home'
 import Login from './pages/login'
 import Register from './pages/register'
 import NotFound from './pages/notFound'
+import Logout from './pages/logout'
 import ProtectedRoute from './components/protectedRoute'
-
-function LogOut() {
-  localStorage.clear()
-  return <Navigate to="/login" />
-}
 
 function RegisterAndLogOut() {
   localStorage.clear()
@@ -37,9 +33,8 @@ function App() {
 
           <Route 
             path='/logout' 
-            element={<LogOut />}>
+            element={<Logout />}>
           </Route>
-
 
           <Route 
             path='/register' 
